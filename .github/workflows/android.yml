@@ -19,13 +19,12 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x ./gradlew
+      - name: Build with Gradle (using Gradle Action)
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: assembleDebug
 
-      - name: Build with Gradle
-        run: ./gradlew assembleDebug
-
-      - name: Upload APK
+      - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
           name: usc-webview-apk
