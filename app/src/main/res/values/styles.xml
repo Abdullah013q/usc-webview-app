@@ -1,6 +1,11 @@
 <resources>
-    <style name="Theme.App.NoActionBar.Fullscreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowBackground">@android:color/white</item>
+    <style name="Theme.USCWebViewApp" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#303F9F</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+    <style name="Theme.USCWebViewApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 </resources>
